@@ -10,48 +10,52 @@
 </head>
 
 <body>
-    <header class="header wrapper">
-        <nav class="nav">
-            <li class="nav__list"><a href="#"></a>Home</li>
-            <li class="nav__list"><a href="#"></a>About</li>
-            <li class="nav__list--homeLink"><a href="#"></a>Willow</li>
-            <li class="nav__list"><a href="#"></a>Blog</li>
-            <li class="nav__list"><a href="#"></a>Contact</li>
-        </nav>
-        <section class="title title-main">
-            <img class="title__item" src="#" alt="Daily Musings of">
-            <h1 class="title__item">Willow</h1>
-            <img class="title__item" src="#" alt="Headshot of Woman in Yellow Jacket">
+    <header class="header">
+        <div class="nav-background">
+            <nav class="nav">
+                <li class="nav__list"><a href="#">Home</a></li>
+                <li class="nav__list"><a href="#">About</a></li>
+                <li class="nav__list nav__list--homeLink"><a href="#">Willow</a></li>
+                <li class="nav__list"><a href="#">Blog</a></li>
+                <li class="nav__list"><a href="#">Contact</a></li>
+            </nav>
+        </div>
+        <section class="title title--main wrapper">
+            <div class="title__item">
+                <img src="assets/circle-text.png" alt="Daily Musings of">
+                <h1>Willow</h1>
+            </div>
+            <img class="title__img" src="assets/home-image-1.jpg" alt="Headshot of Woman in Yellow Jacket">
         </section>
     </header>
 
     <main>
-        <section class="bio wrapper">
-            <h2>Who's Willow?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio dolores animi, facilis beatae eaque ipsa voluptate magni veniam? Recusandae ipsam asperiores id molestias doloribus consequatur, quibusdam qui vel sequi corporis.</p>
-            <a href="#">Find Out More</a>
+        <section class="bio">
+            
+            <div class="bio__item wrapper">
+                <h2 class="bio__h">Who's Willow?</h2>
+                <p class="bio__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio dolores animi, facilis beatae eaque ipsa voluptate magni veniam? Recusandae ipsam asperiores id molestias doloribus consequatur, quibusdam qui vel sequi corporis.</p>
+                <a class="bio__button" href="#">Find Out More</a>
+            </div>
         </section>
 
-        <section class="about wrapper">
-
-            <section class="article">
-                <figure class="article__item">
-                    <figcaption></figcaption>
-                    <img src="" alt="Bridge infront of waterfall">
-                </figure>
-                <div class="article__item">
-                    <h3>Who's Willow</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsa ad voluptatem eos aut rerum molestiae animi sit, dolorem explicabo quis sed temporibus necessitatibus maiores officia id asperiores perspiciatis nisi!</p>
-                    <a href="#">Read More</a>
+        <section class="about">
+            <div class="article--backdrop"></div>
+            <section class="article wrapper">
+                <div class="article__item"><img class="article--img" src="assets/home-image-2.jpg" alt="Bridge infront of waterfall"></div>
+                <div class="article__item article--text">
+                    <h3 class="article__h">Who's Willow</h3>
+                    <p class="article__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsa ad voluptatem eos aut rerum molestiae animi sit, dolorem explicabo quis sed temporibus necessitatibus maiores officia id asperiores perspiciatis nisi!</p>
+                    <a class="article__button" href="#">Read More</a>
                 </div>
             </section>
 
-            <section class="about article">
+            <section class="wrapper">
                 <figure class="article__item">
                     <figcaption></figcaption>
                     <img src="" alt="Close up of white flower">
                 </figure>
-                <div class="article__item">
+                <div class="">
                     <h3></h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsa ad voluptatem eos aut rerum molestiae animi sit, dolorem explicabo quis sed temporibus necessitatibus maiores officia id asperiores perspiciatis nisi!</p>
                     <a href="#">Read More</a>

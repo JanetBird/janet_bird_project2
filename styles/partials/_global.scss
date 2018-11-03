@@ -2,7 +2,7 @@ $Color1: #345231;
 $Color2:#709b6b;
 $Color3:#e4a436;
 $Color4: #1f1f1f;
-$Color5: #f6f6f6;
+$Color5: #1568d429;
 
 
 html {
@@ -12,14 +12,19 @@ html {
 
 body {
     font-size: 1.8rem;
+    color: #1f1f1f;
+    background: #f6f6f6;
 }
 
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 // mixins
 
 @mixin cursiveFont($fontSize) {
     font-size: $fontSize;
-    color: $Color4;
     font-family: 'Abril Fatface', cursive;
     text-transform: uppercase;
 } 
@@ -27,6 +32,13 @@ body {
 
 @mixin sansFont($fontSize) {
     font-size: $fontSize;
-    color: $Color4;
     font-family: "Montserrat", sans-serif;
+}
+
+@mixin button($fontSize) {
+    font-size: $fontSize;
+    padding: 10px 20px;
+    background: $Color3;
+    text-decoration: none;
+    color: $Color4;
 }
