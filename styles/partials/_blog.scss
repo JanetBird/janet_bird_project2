@@ -24,10 +24,15 @@
     flex-direction: row-reverse;
 }
 
+.main__post section:nth-of-type(odd) {
+    border-bottom: 8px solid $Color2;
+}
+
 .main__entry {
     background: #fff;
     padding: 50px;
     margin-bottom: 30px;
+    flex: 1 0 75%;
     &--date, &--p {
         @include sansFont(2rem);
         margin: 0 0 20px 20px;
@@ -43,10 +48,14 @@
 
 .aside__post {
     margin-right: 30px;
+    flex: 1 0 25%;
     &--entry {
     background: #fff;
     padding: 20px;
     margin-bottom: 30px;
+    figure img {
+        width: 100%;
+    }
     }
     &--p, &--ul {
         @include sansFont(2rem);
@@ -58,3 +67,33 @@
         }
     }
 }
+
+form {
+    @include columnFlex(center);
+    div {
+        display: flex;
+        margin-bottom: 20px;
+    }
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 20px 10px;
+}
+
+input[type=email] {
+    @extend input[type=text];
+    margin-left: 10px;
+
+}
+
+textarea {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+input[type=submit] {
+    @include button(2rem);
+    border: none;
+    }
+
