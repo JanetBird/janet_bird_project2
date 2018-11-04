@@ -1,0 +1,43 @@
+.footer-nav {
+    background: $Color5;
+    padding: 100px 0;
+}
+
+.footer-nav__item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-nav__text {
+    margin: 0 0 50px 25px;
+    &--p {
+        @include sansFont(2rem);
+    }
+
+}
+
+.footer-nav__icon {
+    background: $Color3;
+    border-radius: 50%;
+    &--right {
+        margin-left: 50px;
+    }
+    a {
+        color: $Color4;
+        display: block;
+        padding: 15px 18px;   
+    }
+}
+
+.copyright {
+    @include sansFont(2rem);
+    background: $Color4;
+    text-align: center;
+    color: #fff;
+    p {
+        margin: 0;
+        padding: 20px;
+    }
+
+
+}

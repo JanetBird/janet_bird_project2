@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    
+
     <link rel="stylesheet" href="styles/styles.css">
     <title>JB Willow</title>
 </head>
@@ -16,7 +20,7 @@
                 <li class="nav__list"><a href="#">Home</a></li>
                 <li class="nav__list"><a href="#">About</a></li>
                 <li class="nav__list nav__list--homeLink"><a href="#">Willow</a></li>
-                <li class="nav__list"><a href="#">Blog</a></li>
+                <li class="nav__list"><a href="blog.html">Blog</a></li>
                 <li class="nav__list"><a href="#">Contact</a></li>
             </nav>
         </div>
@@ -33,75 +37,108 @@
         <section class="bio">
             
             <div class="bio__item wrapper">
-                <h2 class="bio__h">Who's Willow?</h2>
+                <h2>Who's Willow?</h2>
                 <p class="bio__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio dolores animi, facilis beatae eaque ipsa voluptate magni veniam? Recusandae ipsam asperiores id molestias doloribus consequatur, quibusdam qui vel sequi corporis.</p>
                 <a class="bio__button" href="#">Find Out More</a>
             </div>
         </section>
 
         <section class="about">
-            <div class="article--backdrop"></div>
-            <section class="article wrapper">
-                <div class="article__item"><img class="article--img" src="assets/home-image-2.jpg" alt="Bridge infront of waterfall"></div>
-                <div class="article__item article--text">
-                    <h3 class="article__h">Who's Willow</h3>
+            <div class="article article--1">
+                <div class="article__backdrop article__backdrop--top"></div>
+
+                <div class="article wrapper">
+                    <figure class="article__item article__item--original"><img src="assets/home-image-2.jpg" alt="Bridge infront of waterfall"></figure>
+                    <div class="article__item article__text article__text--top">
+                        <h3 class="article__h">Favourite Things</h3>
+                        <p class="article__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsa ad voluptatem eos aut rerum molestiae animi sit, dolorem explicabo quis sed temporibus necessitatibus maiores officia id asperiores perspiciatis nisi!</p>
+                        <a class="article__button" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article article--2">
+                <section class="article wrapper">
+                    <div class="article__item article__text article__text--bottom">
+                        <h3 class="article__h">Bucketlist</h3>
+                        <p class="article__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsa ad voluptatem eos aut rerum molestiae animi sit, dolorem explicabo quis sed temporibus necessitatibus maiores officia id asperiores perspiciatis nisi!</p>
+                        <a class="article__button" href="#">Read More</a>
+                    </div>
+                    <figure class="article__item article__item--mirror"><img src="assets/home-image-3.jpg" alt="Bridge infront of waterfall"></figure>
+                </section>
+                
+                <div class="article__backdrop article__backdrop--bottom"></div>
+            </div>
+        </section>
+
+            
+        <section class="journey">
+            <div class="article wrapper">
+                <figure><img src="assets/home-image-4.jpg" alt="Woman in yellow jacket, in forest, facing away"></figure>
+                <div class="article__item article__text article__text--top">
+                    <h3 class="article__h">Willow's Journey</h3>
                     <p class="article__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsa ad voluptatem eos aut rerum molestiae animi sit, dolorem explicabo quis sed temporibus necessitatibus maiores officia id asperiores perspiciatis nisi!</p>
-                    <a class="article__button" href="#">Read More</a>
+                    <a class="article__button href="#">Read More</a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="wrapper">
-                <figure class="article__item">
-                    <figcaption></figcaption>
-                    <img src="" alt="Close up of white flower">
-                </figure>
-                <div class="">
-                    <h3></h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsa ad voluptatem eos aut rerum molestiae animi sit, dolorem explicabo quis sed temporibus necessitatibus maiores officia id asperiores perspiciatis nisi!</p>
-                    <a href="#">Read More</a>
-                </div>
-            </section>
+    <div class="wallpaper"></div>
 
-            <section class="journey article">
-                <img src="" alt="Woman in yellow jacket, in forest, facing away">
-                <div class="article__item">
-                    <h3></h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsa ad voluptatem eos aut rerum molestiae animi sit, dolorem explicabo quis sed temporibus necessitatibus maiores officia id asperiores perspiciatis nisi!</p>
-                    <a href="#">Read More</a>
-                </div>
-            </section>
+    <section class="gallery">
+        <div class="gallery__item wrapper">
+            <figure class="gallery__img">
+                <img src="./assets/home-image-6.jpg" alt="Empty road in forest on a foggy day">
+            </figure>
+            <figure class="gallery__img">
+                <img src="assets/home-image-7.jpg" alt="Lemons in bow" class="gallery__img">
+            </figure>
+            <figure class="gallery__img">
+                <img src="assets/home-image-8.jpg" alt="Antique-style staircase" class="gallery__img">
+            </figure>
+        </div>
+    </section>
 
-            <section class="wallpaper-image"></section>
-
-            <section class="gallery">
-                <img src="" alt="Empty road in forest on a foggy day" class="gallery_item">
-                <img src="" alt="Lemons in bow" class="gallery_item">
-                <img src="" alt="Antique-style staircase" class="gallery_item">
-            </section>
     </main>
     <footer>
         <nav class="footer-nav">
-            <img src="" alt="">
-            <div>
-                <h4>Photos</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deleniti, in nesciunt veniam, rerum corrupti minima dicta itaque, commodi perspiciatis voluptatibus praesentium. Optio numquam exercitationem molestiae aliquam distinctio quos vitae.</p>
+            <div class="footer-nav__item wrapper">
+                <div class="footer-nav__icon">
+                    <a href="#"><i class="fas fa-image"></i></a>
+                </div>
+                <div class="footer-nav__text">
+                    <h3>Photos</h3>
+                    <p class="footer-nav__text--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deleniti, in nesciunt veniam, rerum corrupti minima dicta itaque, commodi perspiciatis voluptatibus praesentium. Optio numquam exercitationem molestiae aliquam distinctio quos vitae.</p>
+                </div>
+                <div class="footer-nav__icon footer-nav__icon--right">
+                    <a href="#"><i class="fas fa-user-alt"></i></a>
+                </div>
+                <div class="footer-nav__text">
+                    <h3>About</h3>
+                    <p class="footer-nav__text--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deleniti, in nesciunt veniam, rerum corrupti minima dicta itaque, commodi perspiciatis voluptatibus praesentium. Optio numquam exercitationem molestiae aliquam distinctio quos vitae.</p>
+                </div>
             </div>
-            <img src="" alt="">
-            <div>
-                <h4>Blog</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deleniti, in nesciunt veniam, rerum corrupti minima dicta itaque, commodi perspiciatis voluptatibus praesentium. Optio numquam exercitationem molestiae aliquam distinctio quos vitae.</p>
-            </div>
-            <img src="" alt="">
-            <div>
-                <h4>About</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deleniti, in nesciunt veniam, rerum corrupti minima dicta itaque, commodi perspiciatis voluptatibus praesentium. Optio numquam exercitationem molestiae aliquam distinctio quos vitae.</p>
-            </div>
-            <img src="" alt="">
-            <div>
-                <h4>Contact Me</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deleniti, in nesciunt veniam, rerum corrupti minima dicta itaque, commodi perspiciatis voluptatibus praesentium. Optio numquam exercitationem molestiae aliquam distinctio quos vitae.</p>
+            <div class="footer-nav__item wrapper">
+                <div class="footer-nav__icon">
+                    <a href="#"><i class="fas fa-desktop"></i></a>
+                </div>
+                <div class="footer-nav__text">
+                    <3>Blog</h3>
+                    <p class="footer-nav__text--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deleniti, in nesciunt veniam, rerum corrupti minima dicta itaque, commodi perspiciatis voluptatibus praesentium. Optio numquam exercitationem molestiae aliquam distinctio quos vitae.</p>
+                </div>
+                <div class="footer-nav__icon footer-nav__icon--right">
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="footer-nav__text">
+                    <h3>Contact Me</3>
+                    <p class="footer-nav__text--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deleniti, in nesciunt veniam, rerum corrupti minima dicta itaque, commodi perspiciatis voluptatibus praesentium. Optio numquam exercitationem molestiae aliquam distinctio quos vitae.</p>
+                </div>
             </div>
         </nav>
+        <section class="copyright">
+            <p>Copyright @ 2018 HackerYou</p>
+        </section>
+
     </footer>
     
 </body>
