@@ -87,6 +87,11 @@ h5 {
     margin: 20px 0;
 }
 
+.main__background {
+    background-color: $Color5;
+    padding: 100px;
+    min-height: 100vh;
+}
 
 .wrapper {
     max-width: 1280px;

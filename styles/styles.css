@@ -187,6 +187,11 @@ h5 {
   text-transform: uppercase;
   margin: 20px 0; }
 
+.main__background {
+  background-color: #1568d429;
+  padding: 100px;
+  min-height: 100vh; }
+
 .wrapper {
   max-width: 1280px;
   margin: 0 auto; }
@@ -340,6 +345,12 @@ header {
     left: calc(50% - 25px);
     background: #345231; }
 
+.article__journey figure {
+  width: 50%; }
+  .article__journey figure img {
+    width: 100%;
+    height: 100; }
+
 .journey {
   background: #1568d429;
   padding: 100px 0; }
@@ -418,10 +429,6 @@ header {
   bottom: -24px;
   left: 15%; }
 
-.main__blog {
-  background-color: #1568d429;
-  padding: 100px; }
-
 .all__posts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,12 +442,13 @@ header {
   border-bottom: 8px solid #709b6b; }
 
 .main__entry {
-  background: #fff;
   padding: 50px;
   margin-bottom: 30px;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 75%;
   flex: 1 0 75%; }
+  .main__entry--blog {
+    background: #fff; }
   .main__entry--date, .main__entry--p {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
@@ -456,20 +464,22 @@ header {
     align-items: flex-start; }
 
 .aside__post {
-  margin-right: 30px;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 25%;
   flex: 1 0 25%; }
-  .aside__post--entry {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 30px; }
-    .aside__post--entry figure img {
-      width: 100%; }
-  .aside__post--p, .aside__post--ul {
+  .aside__post--blog {
+    margin-right: 30px; }
+
+.aside__entry {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px; }
+  .aside__entry figure img {
+    width: 100%; }
+  .aside__entry--p, .aside__entry--ul {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif; }
-    .aside__post--p span a, .aside__post--ul span a {
+    .aside__entry--p span a, .aside__entry--ul span a {
       padding-left: 5px;
       text-decoration: none;
       color: #709b6b;
@@ -494,14 +504,17 @@ form {
 
 input[type=text], input[type=email] {
   width: 50%;
-  padding: 20px 10px; }
+  padding: 20px 10px;
+  border: none; }
 
 input[type=email] {
-  margin-left: 10px; }
+  margin-left: 10px;
+  border: none; }
 
 textarea {
   margin-bottom: 20px;
-  padding: 20px; }
+  padding: 20px;
+  border: none; }
 
 input[type=submit] {
   font-size: 2rem;
@@ -512,3 +525,31 @@ input[type=submit] {
   font-family: 'Abril Fatface', cursive;
   text-transform: uppercase;
   border: none; }
+
+.header--contact {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  position: relative; }
+
+.aside__entry--contact {
+  margin-top: 50px; }
+
+.aside__entry--social-icons {
+  color: #345231;
+  padding: 0; }
+  .aside__entry--social-icons a {
+    padding: 10px;
+    font-size: 2.4rem; }
+
+.aside__entry--contact-info {
+  list-style: none;
+  padding: 0; }
+  .aside__entry--contact-info li {
+    padding: 2px;
+    font-size: 1.6rem; }
+  .aside__entry--contact-info a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-weight: 900; }
