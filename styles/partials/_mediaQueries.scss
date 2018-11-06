@@ -1,0 +1,48 @@
+@media (max-width: 1300px) {
+
+.title--main {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.article__item {
+    width: 35%;
+    &--original {
+        top: 0;
+        padding-left: 50px;
+    }
+    &--mirror {
+        padding-right: 50px;
+        bottom: 0;
+    }
+    &--original img {
+        box-shadow: 20px 20px $Color2;
+    }
+    &--mirror img {
+        box-shadow: -20px -20px $Color1;
+    }
+}
+
+.article__text {
+    width: 65%;
+    padding: 50px 100px;
+}
+
+.article__backdrop {
+    display: none;
+}
+
+.article__journey {
+    padding-left: 50px;
+}
+
+.gallery {
+    padding: 100px 50px;
+
+}
+
+.footer-nav {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+}

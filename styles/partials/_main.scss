@@ -29,12 +29,17 @@
         @include columnFlex(center);
         position: relative;
         z-index: 10;
+        width: 50%;
         &--original {
         display: block;
         top:-50px;
         }
         &--mirror {
             bottom:-50px;
+        }
+        img {
+            display: block;
+            width: 100%;
         }
     }
     &__text {
@@ -123,7 +128,6 @@
         }   
     }
 }
-
 
 
 
