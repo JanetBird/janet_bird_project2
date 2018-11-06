@@ -1,7 +1,7 @@
 // FIRST SECTION - BIOGRAPHY
 
 .bio {
-    background: #1568d429;
+    background: $Color5;
     &__item {
     padding: 100px 0;
     text-align: center;
@@ -25,6 +25,7 @@
 .article {
     display: flex;
     align-items: center;
+    background: #fff;
     &__item {
         @include columnFlex(center);
         position: relative;
@@ -58,6 +59,10 @@
             @include button(2rem);
             display: block;
         }
+    }
+    &__journey {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -113,6 +118,7 @@
 // FIFTH SECTION GALLERY
 
 .gallery {
+    background: #fff;
     padding: 100px 0;
     &__item {
         display: flex;
