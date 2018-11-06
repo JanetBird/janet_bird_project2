@@ -3,6 +3,10 @@ header {
     // min-height: 100vh;
 }
 
+.hamburger {
+    display: none;
+}
+
 .nav-background {
     background: #345231;
     padding: 10px 0;
@@ -38,13 +42,13 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    position: relative;
     &__item {
         position: relative;
         display: flex;
         img {
         position: absolute;
         left: -50px;
+        top: -30px;
          }
     }  
 }
