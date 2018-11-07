@@ -16,6 +16,10 @@
     }
 }
 
+.bio__button:hover {
+    background: $Color2;
+}
+
 
 // SECOND SECTION ABOUT
 
@@ -64,6 +68,10 @@
         display: flex;
         align-items: center;
     }
+}
+
+.article__button:hover {
+    background: $Color2;
 }
 
 .article--2 {

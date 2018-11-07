@@ -12,8 +12,13 @@ h4 {
 
 .title__item--blog {
     display: flex;
+    justify-content: flex-start;
     align-items: flex-end;
-    height: 350px;
+    height: 325px;
+    line-height: 0.75;
+    span {
+        margin-left: 20px;
+    }
 }
 
 // MAIN BLOG SECTION

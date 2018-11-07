@@ -1,15 +1,15 @@
 .header--contact {
     background-image: url(../assets/contact-image-1.jpg);
     background-size: cover;
-    height: 400px;
     width: 100%;
     position: relative;
 }
 
 .title__item--contact {
     display: flex;
+    justify-content: flex-start;
     align-items: flex-end;
-    height: 350px;
+    height: 300px;
 }
 
 // MAIN CONTACT SECTION

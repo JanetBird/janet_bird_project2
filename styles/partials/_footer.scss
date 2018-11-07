@@ -10,6 +10,10 @@
 
 .footer-nav__text {
     margin: 0 0 50px 25px;
+    a { 
+        text-decoration: none;
+        color: $Color4;
+    }
     &--p {
         @include sansFont(2rem);
     }
@@ -25,7 +29,11 @@
     a {
         color: $Color4;
         display: block;
-        padding: 15px 18px;   
+        padding: 15px 18px; 
+        &:hover {
+            background: $Color2;
+            border-radius: 50%;
+        }  
     }
 }
 
